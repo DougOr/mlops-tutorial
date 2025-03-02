@@ -1,5 +1,3 @@
----
-
 ```markdown
 # MLOps Tutorial: Building a CI/CD Pipeline for MNIST Digit Classification
 
@@ -191,37 +189,6 @@ The CI/CD pipeline is defined in `.github/workflows/ci-cd-pipeline.yml`. It auto
 #### **How to Use the Pipeline**
 1. Push your code to the `main` branch.
 2. GitHub Actions will automatically trigger the pipeline.
-
----
-
-## Repository Structure
-
-```
-mlops-tutorial/
-├── README.md
-├── requirements.txt
-├── data/
-│   ├── reference_data.csv
-│   └── current_data.csv
-├── notebooks/
-│   ├── mnist_training.ipynb
-│   └── mnist_training_colab.ipynb
-├── scripts/
-│   ├── train_model.py
-│   ├── monitor_drift.py
-│   ├── deploy_model.py
-│   └── generate_sbom.py
-├── models/
-│   └── mnist_model.pth
-├── tests/
-│   ├── test_data_validation.py
-│   └── test_model_performance.py
-├── .github/
-│   └── workflows/
-│       └── ci-cd-pipeline.yml
-└── docs/
-    └── mlops_workflow.md
-```
 
 ---
 
